@@ -1,9 +1,10 @@
 name: CI
-on:
-  push:
-    paths-ignore:
-      - 'docs/**'
-      - '**.md'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     paths-ignore:
+#       - 'docs/**'
+#       - '**.md'
 jobs:
   test:
     name: Ruby ${{ matrix.ruby }} (${{ matrix.os }})
